@@ -1,0 +1,3 @@
+include:
+  - caddy/compose.yaml
+  - headscale/compose.yaml

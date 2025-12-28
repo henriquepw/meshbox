@@ -1,0 +1,17 @@
+services:
+  headscale:
+    container_name: headscale
+    image: headscale/headscale:latest
+    restart: unless-stopped
+    labels:
+      - "me.tale.headplane.target=headscale"
+    volumes:
+      - ./config:/etc/headscale
+      - ./data:/var/lib/headscale
+    command: serve
+    networks:
+      reverseproxy:
+
+networks:
+  reverseproxy:
+    external: true

@@ -1,0 +1,11 @@
+head.henrique.pw {
+    reverse_proxy * http://headscale:8080
+}
+
+tv.henrique.pw {
+    reverse_proxy * 100.64.0.4:8096
+}
+
+tv.felipefbs.dev {
+    reverse_proxy * 100.64.0.6:8096
+}

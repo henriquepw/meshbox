@@ -3,9 +3,9 @@ head.henrique.pw {
 }
 
 tv.henrique.pw {
-    reverse_proxy * 100.64.0.4:8096
+    reverse_proxy * mini:8096
 }
 
 tv.felipefbs.dev {
-    reverse_proxy * 100.64.0.6:8096
+    reverse_proxy * filipea:8096
 }
